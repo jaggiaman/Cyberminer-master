@@ -1,0 +1,39 @@
+.invalidField {
+	border: 1px solid red;
+}
+
+.container {
+	padding-top: 60px;
+}
+
+.fas {
+	cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.loader {
+  border: 8px solid #000000;
+  border-radius: 50%;
+  border-top: 8px solid #007bff;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 10;
+  position: absolute;
+  top: calc(45% - 30px);
+  left: calc(50% - 30px);
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
